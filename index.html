@@ -7,7 +7,7 @@
 	<title>影视解析系统</title>
 	<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/site.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 </head>
@@ -50,7 +50,7 @@
 						<form id="sub" action="main" method="post" target="_blank" href="ads">
 							<input type="text" id="address" name="address" class="form-control search clearable" placeholder="请粘贴如以下的视频站播放链接哦~" required="required" autocomplete="off" autofocus="on" tabindex="0" autocorrect="off" autocapitalize="off" spellcheck="false">
 
-						<input type="button" id="btn" name="btn" style="position: absolute;top: 0%;right: 12px;margin-top: -5px;outline: 0;background-color: transparent; border: 0;">
+						<button type="button" id="btn" name="btn" style="position: absolute;top: 0%;right: 12px;margin-top: -5px;outline: 0;background-color: transparent; border: 0;">
 							<i class="fa fa-search"></i>
 						</button>
 						</form>
@@ -237,7 +237,7 @@
 <script>var build = 1607680413208;</script>
 <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/layui/2.5.6/layui.all.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
 <script src="./js/main.js"></script>
 <script type="text/javascript">
@@ -248,7 +248,7 @@
         	{
         		setTimeout(function (){$('#sub')[0].reset();}, 2000)
         	};
-        	var vipUrl='https://jsap.attakids.com/?url='+videoAddress;
+        	var vipUrl='https://jx.quanmingjiexi.com/?url='+videoAddress;
             //var a = $('a')[0];
             var a = $("<a href="+vipUrl+" target='_blank'>VideoVip</a>").get(0);
             
