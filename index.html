@@ -47,7 +47,7 @@
 				</p>
 				<div class="search-wraper" role="search">
 					<div class="form-group">
-						<form id="sub" action="main" method="post" target="_blank" href="ads">
+						<form id="sub" onsubmit="analyse_url()">
 							<input type="text" id="address" name="address" class="form-control search clearable" placeholder="请粘贴如以下的视频站播放链接哦~" required="required" autocomplete="off" autofocus="on" tabindex="0" autocorrect="off" autocapitalize="off" spellcheck="false">
 
 						<button type="button" id="btn" name="btn" style="position: absolute;top: 0%;right: 12px;margin-top: -5px;outline: 0;background-color: transparent; border: 0;">
@@ -182,7 +182,7 @@
 				<p>
 					VideoVip 是一款各大视频网站VIP资源免费解析1080P免广告的视频解析系统。
 				</p>
-				<p>反馈或建议请发送邮件至：<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Bn9pf2pvaGFZZWlrRnd3KGVpaw" target="_blank">kinshine@qq.com</a></p>
+				<p>反馈或建议请发送邮件至：<a href="mailto:kinshine@foxmail.com">kinshine@foxmail.com</a></p>
 			</div>
 			<div class="footer-techs col-md-5 col-sm-12">
 				<h4>我们用到的技术</h4>
@@ -243,7 +243,12 @@
 <script type="text/javascript">
 	$(function() {
         $("#btn").click(function() {
-        	var videoAddress=$('#address').val();
+        	analyse_url();
+        });
+    });
+
+    function analyse_url(){
+    	var videoAddress=$('#address').val();
         	if (videoAddress!='') 
         	{
         		setTimeout(function (){$('#sub')[0].reset();}, 2000)
@@ -255,8 +260,7 @@
             var e = document.createEvent('MouseEvents');
             e.initEvent( 'click', true, true );
             a.dispatchEvent(e);
-        });
-    });
+    }
 </script>
 </body>
 </html>
